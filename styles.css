@@ -1,0 +1,104 @@
+:root {
+  --primary: #1a237e;
+  --accent: #ff9800;
+  --bg: #f5f7fa;
+  --text: #222;
+  --section-bg: #fff;
+  --border-radius: 12px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 2.5rem 0 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+header p {
+  margin: 1rem 0 0 0;
+  font-size: 1.25rem;
+  color: #c5cae9;
+}
+nav {
+  margin-top: 1.5rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--accent);
+}
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+section {
+  background: var(--section-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 12px rgba(26,35,126,0.04);
+  margin-bottom: 2.5rem;
+  padding: 2.5rem 2rem;
+}
+section h2 {
+  color: var(--primary);
+  margin-top: 0;
+  font-size: 2rem;
+}
+.expertise-list, .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.expertise-item, .product-item {
+  flex: 1 1 220px;
+  background: #f0f3fa;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 1px 4px rgba(26,35,126,0.03);
+  text-align: center;
+}
+.expertise-item h3, .product-item h3 {
+  margin: 0.5rem 0 0.7rem 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 1.1rem;
+}
+.contact strong {
+  color: var(--primary);
+}
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  padding: 2rem 0 1rem 0;
+}
+@media (max-width: 700px) {
+  main { padding: 0 0.5rem; }
+  section { padding: 1.5rem 0.7rem; }
+  .expertise-list, .products-list { flex-direction: column; gap: 1rem; }
+} 

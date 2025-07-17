@@ -1,0 +1,8 @@
+{
+  "name": "techieora-landing",
+  "version": "1.0.0",
+  "description": "Static landing page for techieora.com",
+  "scripts": {
+    "start": "npx serve . -l 8000"
+  }
+} 
